@@ -1,0 +1,701 @@
+{
+  "taxonomy_version": "1.0",
+  "last_updated": "2025-11-13",
+  "description": "Standardized job roles taxonomy for South African career guidance, aligned with OFO codes where applicable",
+  "career_categories": [
+    {
+      "category_id": "BUS",
+      "category_name": "Business & Management",
+      "subcategories": [
+        {
+          "subcategory_id": "BUS-001",
+          "subcategory_name": "General Management",
+          "roles": [
+            "Business Manager",
+            "Operations Manager",
+            "Project Manager",
+            "Business Analyst",
+            "Management Consultant",
+            "Entrepreneur",
+            "Small Business Owner",
+            "General Manager",
+            "Chief Executive Officer",
+            "Chief Operating Officer"
+          ]
+        },
+        {
+          "subcategory_id": "BUS-002",
+          "subcategory_name": "Human Resources",
+          "roles": [
+            "Human Resources Manager",
+            "Recruitment Specialist",
+            "Training and Development Officer",
+            "Employee Relations Manager",
+            "Compensation and Benefits Manager",
+            "HR Business Partner",
+            "Talent Acquisition Specialist",
+            "Organizational Development Consultant"
+          ]
+        },
+        {
+          "subcategory_id": "BUS-003",
+          "subcategory_name": "Marketing & Sales",
+          "roles": [
+            "Marketing Manager",
+            "Brand Manager",
+            "Digital Marketing Specialist",
+            "Social Media Manager",
+            "Market Research Analyst",
+            "Sales Manager",
+            "Business Development Manager",
+            "Advertising Manager",
+            "Public Relations Manager",
+            "Content Marketing Manager"
+          ]
+        },
+        {
+          "subcategory_id": "BUS-004",
+          "subcategory_name": "Supply Chain & Logistics",
+          "roles": [
+            "Supply Chain Manager",
+            "Logistics Manager",
+            "Procurement Manager",
+            "Warehouse Manager",
+            "Inventory Control Manager",
+            "Distribution Manager",
+            "Supply Chain Analyst"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "FIN",
+      "category_name": "Finance & Accounting",
+      "subcategories": [
+        {
+          "subcategory_id": "FIN-001",
+          "subcategory_name": "Accounting",
+          "roles": [
+            "Chartered Accountant (CA(SA))",
+            "Management Accountant",
+            "Financial Accountant",
+            "Tax Consultant",
+            "Auditor",
+            "Forensic Accountant",
+            "Cost Accountant",
+            "Public Accountant",
+            "Chief Financial Officer"
+          ]
+        },
+        {
+          "subcategory_id": "FIN-002",
+          "subcategory_name": "Financial Services",
+          "roles": [
+            "Financial Analyst",
+            "Investment Analyst",
+            "Financial Planner",
+            "Wealth Manager",
+            "Portfolio Manager",
+            "Risk Manager",
+            "Insurance Underwriter",
+            "Actuary",
+            "Stockbroker",
+            "Financial Advisor"
+          ]
+        },
+        {
+          "subcategory_id": "FIN-003",
+          "subcategory_name": "Banking",
+          "roles": [
+            "Bank Manager",
+            "Credit Analyst",
+            "Loan Officer",
+            "Treasury Manager",
+            "Commercial Banker",
+            "Investment Banker",
+            "Compliance Officer"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "ENG",
+      "category_name": "Engineering & Technology",
+      "subcategories": [
+        {
+          "subcategory_id": "ENG-001",
+          "subcategory_name": "Civil Engineering",
+          "roles": [
+            "Civil Engineer",
+            "Structural Engineer",
+            "Water Resources Engineer",
+            "Transportation Engineer",
+            "Geotechnical Engineer",
+            "Construction Manager",
+            "Project Engineer",
+            "Site Engineer",
+            "Quantity Surveyor"
+          ]
+        },
+        {
+          "subcategory_id": "ENG-002",
+          "subcategory_name": "Electrical & Electronic Engineering",
+          "roles": [
+            "Electrical Engineer",
+            "Electronics Engineer",
+            "Power Systems Engineer",
+            "Control Systems Engineer",
+            "Telecommunications Engineer",
+            "Instrumentation Engineer",
+            "Electrical Design Engineer"
+          ]
+        },
+        {
+          "subcategory_id": "ENG-003",
+          "subcategory_name": "Mechanical Engineering",
+          "roles": [
+            "Mechanical Engineer",
+            "Automotive Engineer",
+            "HVAC Engineer",
+            "Maintenance Engineer",
+            "Manufacturing Engineer",
+            "Design Engineer",
+            "Mechatronics Engineer"
+          ]
+        },
+        {
+          "subcategory_id": "ENG-004",
+          "subcategory_name": "Chemical & Process Engineering",
+          "roles": [
+            "Chemical Engineer",
+            "Process Engineer",
+            "Metallurgical Engineer",
+            "Materials Engineer",
+            "Mining Engineer",
+            "Petroleum Engineer",
+            "Environmental Engineer"
+          ]
+        },
+        {
+          "subcategory_id": "ENG-005",
+          "subcategory_name": "Industrial Engineering",
+          "roles": [
+            "Industrial Engineer",
+            "Quality Assurance Engineer",
+            "Production Manager",
+            "Operations Research Analyst",
+            "Systems Engineer",
+            "Efficiency Specialist"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "ICT",
+      "category_name": "Information & Communication Technology",
+      "subcategories": [
+        {
+          "subcategory_id": "ICT-001",
+          "subcategory_name": "Software Development",
+          "roles": [
+            "Software Developer",
+            "Front-End Developer",
+            "Back-End Developer",
+            "Full-Stack Developer",
+            "Mobile App Developer",
+            "Software Engineer",
+            "DevOps Engineer",
+            "Software Architect",
+            "Technical Lead"
+          ]
+        },
+        {
+          "subcategory_id": "ICT-002",
+          "subcategory_name": "Data & Analytics",
+          "roles": [
+            "Data Scientist",
+            "Data Analyst",
+            "Business Intelligence Analyst",
+            "Data Engineer",
+            "Machine Learning Engineer",
+            "AI Specialist",
+            "Database Administrator",
+            "Big Data Engineer"
+          ]
+        },
+        {
+          "subcategory_id": "ICT-003",
+          "subcategory_name": "IT Infrastructure & Security",
+          "roles": [
+            "Network Administrator",
+            "Systems Administrator",
+            "Cloud Engineer",
+            "Cybersecurity Analyst",
+            "Information Security Manager",
+            "IT Support Specialist",
+            "Network Engineer",
+            "Security Architect"
+          ]
+        },
+        {
+          "subcategory_id": "ICT-004",
+          "subcategory_name": "IT Management & Strategy",
+          "roles": [
+            "IT Manager",
+            "IT Project Manager",
+            "Chief Information Officer",
+            "IT Consultant",
+            "Enterprise Architect",
+            "IT Business Analyst"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "HEA",
+      "category_name": "Healthcare & Medical Sciences",
+      "subcategories": [
+        {
+          "subcategory_id": "HEA-001",
+          "subcategory_name": "Medical Practice",
+          "roles": [
+            "Medical Doctor (General Practitioner)",
+            "Surgeon",
+            "Specialist Physician",
+            "Anesthesiologist",
+            "Pediatrician",
+            "Psychiatrist",
+            "Radiologist",
+            "Pathologist",
+            "Medical Officer"
+          ]
+        },
+        {
+          "subcategory_id": "HEA-002",
+          "subcategory_name": "Nursing & Midwifery",
+          "roles": [
+            "Registered Nurse",
+            "Professional Nurse",
+            "Midwife",
+            "Nurse Practitioner",
+            "Critical Care Nurse",
+            "Operating Theatre Nurse",
+            "Community Health Nurse",
+            "Nursing Manager"
+          ]
+        },
+        {
+          "subcategory_id": "HEA-003",
+          "subcategory_name": "Allied Health Professions",
+          "roles": [
+            "Pharmacist",
+            "Physiotherapist",
+            "Occupational Therapist",
+            "Speech Therapist",
+            "Audiologist",
+            "Dietitian",
+            "Radiographer",
+            "Medical Laboratory Scientist",
+            "Clinical Psychologist",
+            "Biomedical Scientist"
+          ]
+        },
+        {
+          "subcategory_id": "HEA-004",
+          "subcategory_name": "Dentistry",
+          "roles": [
+            "Dentist",
+            "Oral Hygienist",
+            "Dental Therapist",
+            "Orthodontist",
+            "Oral Surgeon",
+            "Dental Technician"
+          ]
+        },
+        {
+          "subcategory_id": "HEA-005",
+          "subcategory_name": "Veterinary Sciences",
+          "roles": [
+            "Veterinarian",
+            "Veterinary Nurse",
+            "Veterinary Technologist",
+            "Animal Health Technician"
+          ]
+        },
+        {
+          "subcategory_id": "HEA-006",
+          "subcategory_name": "Public Health",
+          "roles": [
+            "Epidemiologist",
+            "Health Promotion Officer",
+            "Environmental Health Practitioner",
+            "Public Health Specialist",
+            "Health Policy Analyst"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "EDU",
+      "category_name": "Education & Training",
+      "subcategories": [
+        {
+          "subcategory_id": "EDU-001",
+          "subcategory_name": "Teaching",
+          "roles": [
+            "Primary School Teacher",
+            "Secondary School Teacher",
+            "Subject Specialist Teacher",
+            "Special Needs Teacher",
+            "Early Childhood Development Practitioner",
+            "Further Education and Training (FET) Teacher",
+            "Adult Education Teacher",
+            "University Lecturer",
+            "Education Researcher"
+          ]
+        },
+        {
+          "subcategory_id": "EDU-002",
+          "subcategory_name": "Education Management",
+          "roles": [
+            "School Principal",
+            "Head of Department (Education)",
+            "Education Administrator",
+            "Curriculum Advisor",
+            "Education Consultant",
+            "Education Policy Analyst"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "LAW",
+      "category_name": "Law & Legal Services",
+      "subcategories": [
+        {
+          "subcategory_id": "LAW-001",
+          "subcategory_name": "Legal Practice",
+          "roles": [
+            "Attorney",
+            "Advocate",
+            "Magistrate",
+            "Judge",
+            "Corporate Lawyer",
+            "Criminal Defense Lawyer",
+            "Family Law Attorney",
+            "Labor Law Attorney",
+            "Intellectual Property Lawyer",
+            "Legal Advisor",
+            "Prosecutor",
+            "Legal Researcher"
+          ]
+        },
+        {
+          "subcategory_id": "LAW-002",
+          "subcategory_name": "Compliance & Risk",
+          "roles": [
+            "Compliance Officer",
+            "Legal Risk Manager",
+            "Regulatory Affairs Specialist",
+            "Corporate Governance Officer"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "SCI",
+      "category_name": "Natural & Physical Sciences",
+      "subcategories": [
+        {
+          "subcategory_id": "SCI-001",
+          "subcategory_name": "Life Sciences",
+          "roles": [
+            "Biologist",
+            "Biochemist",
+            "Microbiologist",
+            "Biotechnologist",
+            "Geneticist",
+            "Zoologist",
+            "Botanist",
+            "Marine Biologist",
+            "Ecologist",
+            "Research Scientist"
+          ]
+        },
+        {
+          "subcategory_id": "SCI-002",
+          "subcategory_name": "Physical Sciences",
+          "roles": [
+            "Physicist",
+            "Chemist",
+            "Geologist",
+            "Geophysicist",
+            "Meteorologist",
+            "Astronomer",
+            "Materials Scientist",
+            "Laboratory Technician"
+          ]
+        },
+        {
+          "subcategory_id": "SCI-003",
+          "subcategory_name": "Mathematics & Statistics",
+          "roles": [
+            "Mathematician",
+            "Statistician",
+            "Actuary",
+            "Operations Research Analyst",
+            "Quantitative Analyst",
+            "Data Modeler"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "SOC",
+      "category_name": "Social Sciences & Psychology",
+      "subcategories": [
+        {
+          "subcategory_id": "SOC-001",
+          "subcategory_name": "Psychology & Counseling",
+          "roles": [
+            "Psychologist",
+            "Clinical Psychologist",
+            "Counseling Psychologist",
+            "Educational Psychologist",
+            "Industrial Psychologist",
+            "Social Worker",
+            "Counselor",
+            "Psychometrist"
+          ]
+        },
+        {
+          "subcategory_id": "SOC-002",
+          "subcategory_name": "Social Sciences",
+          "roles": [
+            "Sociologist",
+            "Anthropologist",
+            "Political Scientist",
+            "Economist",
+            "Development Practitioner",
+            "Social Researcher",
+            "Policy Analyst",
+            "Urban Planner"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "ART",
+      "category_name": "Arts, Design & Media",
+      "subcategories": [
+        {
+          "subcategory_id": "ART-001",
+          "subcategory_name": "Visual Arts & Design",
+          "roles": [
+            "Graphic Designer",
+            "UX/UI Designer",
+            "Web Designer",
+            "Industrial Designer",
+            "Interior Designer",
+            "Fashion Designer",
+            "Textile Designer",
+            "Fine Artist",
+            "Illustrator",
+            "Photographer",
+            "Animator",
+            "3D Modeler"
+          ]
+        },
+        {
+          "subcategory_id": "ART-002",
+          "subcategory_name": "Media & Communication",
+          "roles": [
+            "Journalist",
+            "Editor",
+            "Content Writer",
+            "Copywriter",
+            "Public Relations Officer",
+            "Communications Manager",
+            "Media Planner",
+            "Social Media Specialist",
+            "Broadcasting Professional",
+            "Film Producer",
+            "Video Editor"
+          ]
+        },
+        {
+          "subcategory_id": "ART-003",
+          "subcategory_name": "Performing Arts",
+          "roles": [
+            "Actor",
+            "Musician",
+            "Dancer",
+            "Choreographer",
+            "Theatre Director",
+            "Music Producer",
+            "Sound Engineer",
+            "Arts Administrator"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "AGR",
+      "category_name": "Agriculture & Environmental Sciences",
+      "subcategories": [
+        {
+          "subcategory_id": "AGR-001",
+          "subcategory_name": "Agriculture & Animal Sciences",
+          "roles": [
+            "Agricultural Economist",
+            "Farm Manager",
+            "Agronomist",
+            "Animal Scientist",
+            "Horticulturist",
+            "Soil Scientist",
+            "Agricultural Extension Officer",
+            "Food Scientist",
+            "Agricultural Engineer"
+          ]
+        },
+        {
+          "subcategory_id": "AGR-002",
+          "subcategory_name": "Environmental Management",
+          "roles": [
+            "Environmental Scientist",
+            "Conservation Officer",
+            "Environmental Consultant",
+            "Sustainability Specialist",
+            "Natural Resource Manager",
+            "Wildlife Manager",
+            "Environmental Impact Assessor"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "ARC",
+      "category_name": "Architecture & Built Environment",
+      "subcategories": [
+        {
+          "subcategory_id": "ARC-001",
+          "subcategory_name": "Architecture & Planning",
+          "roles": [
+            "Architect",
+            "Landscape Architect",
+            "Urban Planner",
+            "Town Planner",
+            "Architectural Technologist",
+            "Building Inspector",
+            "Heritage Conservator"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "HOS",
+      "category_name": "Hospitality, Tourism & Services",
+      "subcategories": [
+        {
+          "subcategory_id": "HOS-001",
+          "subcategory_name": "Hospitality & Tourism",
+          "roles": [
+            "Hotel Manager",
+            "Restaurant Manager",
+            "Chef",
+            "Tourism Manager",
+            "Travel Consultant",
+            "Event Manager",
+            "Conference Coordinator",
+            "Guest Relations Manager"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "SAF",
+      "category_name": "Safety, Security & Emergency Services",
+      "subcategories": [
+        {
+          "subcategory_id": "SAF-001",
+          "subcategory_name": "Safety & Security",
+          "roles": [
+            "Safety Officer",
+            "Health and Safety Manager",
+            "Security Manager",
+            "Risk Assessor",
+            "Occupational Health Practitioner",
+            "Fire Safety Officer",
+            "Emergency Response Coordinator"
+          ]
+        },
+        {
+          "subcategory_id": "SAF-002",
+          "subcategory_name": "Emergency Services",
+          "roles": [
+            "Paramedic",
+            "Emergency Medical Technician",
+            "Firefighter",
+            "Disaster Management Officer"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "PUB",
+      "category_name": "Public Administration & Governance",
+      "subcategories": [
+        {
+          "subcategory_id": "PUB-001",
+          "subcategory_name": "Government & Administration",
+          "roles": [
+            "Public Administrator",
+            "Government Official",
+            "Policy Analyst",
+            "Diplomat",
+            "Municipal Manager",
+            "Project Officer (Government)",
+            "Parliamentary Researcher"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_cutting_roles": [
+    {
+      "role_category": "Research & Academia",
+      "roles": [
+        "Research Fellow",
+        "Postdoctoral Researcher",
+        "University Professor",
+        "Academic Researcher",
+        "Research Assistant"
+      ]
+    },
+    {
+      "role_category": "Entrepreneurship & Self-Employment",
+      "roles": [
+        "Business Owner",
+        "Freelance Consultant",
+        "Independent Contractor",
+        "Start-up Founder"
+      ]
+    }
+  ],
+  "usage_notes": {
+    "standardization_rules": [
+      "Always use the exact role titles as listed in this taxonomy",
+      "If a role is not in the taxonomy, select the closest match and add a note",
+      "Use the role_category field to link back to this taxonomy",
+      "For roles that span multiple categories, select the primary category"
+    ],
+    "seniority_guidelines": {
+      "Entry Level": "Typically requires no prior experience, fresh graduate level",
+      "Junior": "1-3 years experience",
+      "Mid-Level": "3-7 years experience",
+      "Senior": "7+ years experience, leadership responsibilities",
+      "Executive": "C-suite or equivalent strategic leadership",
+      "Varies": "Role can be at multiple levels depending on organization"
+    }
+  }
+}
