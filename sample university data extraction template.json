@@ -1,0 +1,599 @@
+{
+  "university": {
+    "name": "University of Cape Town",
+    "abbreviation": "UCT",
+    "country": "South Africa",
+    "province": "Western Cape",
+    "type": "Traditional University",
+    "website": "https://www.uct.ac.za",
+    "contact": {
+      "admissions_email": "admissions@uct.ac.za",
+      "admissions_phone": "+27 21 650 2128",
+      "physical_address": "Private Bag X3, Rondebosch, 7701, Cape Town"
+    }
+  },
+  "extraction_metadata": {
+    "prospectus_year": 2025,
+    "prospectus_source": "UCT Undergraduate Prospectus 2025",
+    "extraction_date": "2025-11-13",
+    "extracted_by": "AI Assistant",
+    "verification_status": "unverified",
+    "notes": "Sample template - requires verification against actual prospectus"
+  },
+  "courses": [
+    {
+      "course_code": "BSCCOM01",
+      "course_name": "Bachelor of Science in Computer Science",
+      "faculty": "Faculty of Science",
+      "department": "Department of Computer Science",
+      "qualification_type": "Bachelor's Degree",
+      "qualification_name": "BSc",
+      "nqf_level": 7,
+      "duration": {
+        "years": 3,
+        "mode": "Full-time"
+      },
+      "saqa_id": "123456",
+      "admission_requirements": {
+        "nsc_requirements": {
+          "minimum_aps": 38,
+          "bachelor_degree_endorsement": true,
+          "diploma_endorsement": false,
+          "required_subjects": [
+            {
+              "subject": "Mathematics",
+              "minimum_level": 6,
+              "minimum_percentage": 70,
+              "alternatives": []
+            },
+            {
+              "subject": "Physical Sciences",
+              "minimum_level": 5,
+              "minimum_percentage": 60,
+              "alternatives": ["Information Technology", "Computer Applications Technology"]
+            },
+            {
+              "subject": "English (Home Language or First Additional Language)",
+              "minimum_level": 5,
+              "minimum_percentage": 60,
+              "alternatives": []
+            }
+          ],
+          "language_requirements": {
+            "home_language": {
+              "minimum_level": 4
+            },
+            "first_additional_language": {
+              "minimum_level": 5
+            }
+          },
+          "additional_requirements": [
+            "Must have passed National Senior Certificate with Bachelor's degree endorsement",
+            "Must meet minimum Faculty of Science requirements"
+          ]
+        },
+        "international_qualifications": [
+          {
+            "qualification_type": "Cambridge International A-Levels",
+            "country_region": "United Kingdom / International",
+            "minimum_requirements": {
+              "description": "Three A-level passes with specific grades"
+            },
+            "subject_requirements": [
+              {
+                "subject": "Mathematics",
+                "minimum_grade": "B",
+                "notes": "Essential requirement"
+              },
+              {
+                "subject": "Physical Science or Computing",
+                "minimum_grade": "C",
+                "notes": "At least one science subject required"
+              }
+            ],
+            "english_proficiency": {
+              "required": true,
+              "accepted_tests": [
+                {
+                  "test_name": "IELTS",
+                  "minimum_score": "7.0 overall, with 7.0 in Academic Writing"
+                },
+                {
+                  "test_name": "TOEFL iBT",
+                  "minimum_score": "100 overall"
+                }
+              ],
+              "exemptions": [
+                "English as medium of instruction for previous 4 years",
+                "A-level English Language or Literature at grade C or higher"
+              ]
+            }
+          },
+          {
+            "qualification_type": "International Baccalaureate (IB)",
+            "country_region": "International",
+            "minimum_requirements": {
+              "description": "IB Diploma with minimum 32 points"
+            },
+            "subject_requirements": [
+              {
+                "subject": "Mathematics (Higher Level)",
+                "minimum_grade": "5",
+                "notes": "Must be Higher Level"
+              },
+              {
+                "subject": "Physical Science (any level)",
+                "minimum_grade": "4",
+                "notes": "Physics, Chemistry, or Computer Science accepted"
+              }
+            ],
+            "english_proficiency": {
+              "required": true,
+              "accepted_tests": [
+                {
+                  "test_name": "IELTS",
+                  "minimum_score": "7.0 overall"
+                }
+              ],
+              "exemptions": [
+                "English A (Higher or Standard Level) at grade 5 or higher",
+                "English B (Higher Level) at grade 6 or higher"
+              ]
+            }
+          },
+          {
+            "qualification_type": "IGCSE / Cambridge O-Levels",
+            "country_region": "International",
+            "minimum_requirements": {
+              "description": "Five O-Level passes or IGCSE equivalent, followed by A-Levels"
+            },
+            "subject_requirements": [
+              {
+                "subject": "Mathematics",
+                "minimum_grade": "B",
+                "notes": "Required at IGCSE level minimum"
+              }
+            ],
+            "english_proficiency": {
+              "required": true,
+              "accepted_tests": [
+                {
+                  "test_name": "IELTS",
+                  "minimum_score": "7.0"
+                }
+              ],
+              "exemptions": [
+                "IGCSE English (First Language) at grade B or higher"
+              ]
+            }
+          },
+          {
+            "qualification_type": "United States High School Diploma",
+            "country_region": "United States",
+            "minimum_requirements": {
+              "description": "High School Diploma plus SAT/ACT scores or AP courses"
+            },
+            "subject_requirements": [
+              {
+                "subject": "Mathematics (Advanced)",
+                "minimum_grade": "B average",
+                "notes": "Pre-Calculus or Calculus preferred"
+              },
+              {
+                "subject": "Science",
+                "minimum_grade": "B average",
+                "notes": "Physics or Computer Science preferred"
+              }
+            ],
+            "english_proficiency": {
+              "required": false,
+              "exemptions": [
+                "Native English speaker with US education"
+              ]
+            }
+          }
+        ],
+        "alternative_pathways": [
+          {
+            "pathway_type": "Recognition of Prior Learning (RPL)",
+            "requirements": [
+              "Minimum 3 years relevant work experience in IT/Computing field",
+              "Portfolio of work demonstrating computing competencies",
+              "Pass RPL assessment tests in Mathematics and Computing fundamentals",
+              "Interview with faculty selection committee"
+            ],
+            "eligibility": "Candidates without formal matric qualification but with substantial industry experience"
+          },
+          {
+            "pathway_type": "Mature Age Entry",
+            "requirements": [
+              "Must be 23 years or older in year of first registration",
+              "Pass special mature age entrance examination covering Mathematics and Computing",
+              "Demonstrate capacity for university-level study",
+              "May require bridging courses"
+            ],
+            "eligibility": "Adults who did not complete NSC or equivalent but show potential for university study"
+          }
+        ],
+        "selection_process": {
+          "is_selective": true,
+          "additional_assessments": [
+            "NBT (National Benchmark Tests) - Academic and Quantitative Literacy, and Mathematics",
+            "Online problem-solving test for Computer Science aptitude",
+            "Interview may be required for borderline candidates"
+          ],
+          "closing_date": "30 September for following academic year"
+        }
+      },
+      "career_outcomes": {
+        "job_roles": [
+          {
+            "role_title": "Software Developer",
+            "role_category": "ICT-001",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Programming (Python, Java, C++)",
+              "Software design patterns",
+              "Version control (Git)",
+              "Problem-solving",
+              "Agile methodologies"
+            ]
+          },
+          {
+            "role_title": "Data Scientist",
+            "role_category": "ICT-002",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Machine learning",
+              "Statistical analysis",
+              "Python/R programming",
+              "Data visualization",
+              "Big data technologies"
+            ]
+          },
+          {
+            "role_title": "Systems Analyst",
+            "role_category": "ICT-004",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Systems analysis",
+              "Requirements gathering",
+              "UML modeling",
+              "Database design",
+              "Business process analysis"
+            ]
+          },
+          {
+            "role_title": "Cybersecurity Analyst",
+            "role_category": "ICT-003",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Network security",
+              "Ethical hacking",
+              "Security protocols",
+              "Risk assessment",
+              "Incident response"
+            ]
+          },
+          {
+            "role_title": "Software Architect",
+            "role_category": "ICT-001",
+            "seniority_level": "Senior",
+            "skills_required": [
+              "Enterprise architecture",
+              "Design patterns",
+              "Cloud computing",
+              "Technical leadership",
+              "Strategic planning"
+            ]
+          }
+        ],
+        "industries": [
+          "Information Technology",
+          "Financial Services",
+          "Telecommunications",
+          "E-commerce",
+          "Consulting",
+          "Healthcare Technology",
+          "Government IT",
+          "Education Technology",
+          "Gaming and Entertainment"
+        ],
+        "professional_registration": [
+          {
+            "body_name": "Institute of Information Technology Professionals South Africa (IITPSA)",
+            "registration_type": "Professional Member",
+            "accreditation_status": "Fully Accredited"
+          },
+          {
+            "body_name": "South African Council for the Project Management Profession (SACPMP)",
+            "registration_type": "Candidate Project Manager",
+            "accreditation_status": "Not Accredited"
+          }
+        ],
+        "further_study_options": [
+          "BSc Honours in Computer Science",
+          "Postgraduate Diploma in Information Technology",
+          "Master of Science in Computer Science",
+          "Master of Information Technology",
+          "PhD in Computer Science",
+          "MBA with IT specialization"
+        ],
+        "employment_statistics": {
+          "employability_rate": 92,
+          "average_starting_salary": {
+            "amount": 380000,
+            "currency": "ZAR",
+            "year": 2024
+          },
+          "source": "UCT Career Services Graduate Outcomes Survey 2024"
+        }
+      },
+      "course_content": {
+        "major_streams": [
+          "Software Engineering",
+          "Data Science",
+          "Artificial Intelligence",
+          "Computer Networks and Security",
+          "Human-Computer Interaction",
+          "Theoretical Computer Science"
+        ],
+        "core_modules": [
+          "Programming Fundamentals",
+          "Data Structures and Algorithms",
+          "Computer Systems",
+          "Database Systems",
+          "Software Engineering",
+          "Operating Systems",
+          "Computer Networks",
+          "Artificial Intelligence",
+          "Theory of Computation",
+          "Final Year Project"
+        ],
+        "practical_components": [
+          "Software development projects throughout the degree",
+          "Industry collaboration projects in final year",
+          "Optional internship opportunities",
+          "Hackathons and coding competitions",
+          "Research project in third year"
+        ]
+      },
+      "additional_info": {
+        "fees": {
+          "annual_fee_range": "R65,000 - R75,000 (South African students)",
+          "year": 2025
+        },
+        "bursaries_available": true,
+        "accommodation": true
+      }
+    },
+    {
+      "course_code": "BCOM-ACC",
+      "course_name": "Bachelor of Commerce in Accounting",
+      "faculty": "Faculty of Commerce",
+      "department": "School of Accounting",
+      "qualification_type": "Bachelor's Degree",
+      "qualification_name": "BCom",
+      "nqf_level": 7,
+      "duration": {
+        "years": 3,
+        "mode": "Full-time"
+      },
+      "admission_requirements": {
+        "nsc_requirements": {
+          "minimum_aps": 40,
+          "bachelor_degree_endorsement": true,
+          "diploma_endorsement": false,
+          "required_subjects": [
+            {
+              "subject": "Mathematics",
+              "minimum_level": 6,
+              "minimum_percentage": 70,
+              "alternatives": []
+            },
+            {
+              "subject": "English (Home Language or First Additional Language)",
+              "minimum_level": 5,
+              "minimum_percentage": 60,
+              "alternatives": []
+            },
+            {
+              "subject": "Accounting",
+              "minimum_level": 5,
+              "minimum_percentage": 60,
+              "alternatives": []
+            }
+          ],
+          "language_requirements": {
+            "home_language": {
+              "minimum_level": 4
+            },
+            "first_additional_language": {
+              "minimum_level": 5
+            }
+          },
+          "additional_requirements": [
+            "Life Orientation not included in APS calculation",
+            "NBT Academic Literacy and Quantitative Literacy tests required"
+          ]
+        },
+        "international_qualifications": [
+          {
+            "qualification_type": "Cambridge International A-Levels",
+            "country_region": "United Kingdom / International",
+            "subject_requirements": [
+              {
+                "subject": "Mathematics",
+                "minimum_grade": "B",
+                "notes": "Essential"
+              },
+              {
+                "subject": "Accounting",
+                "minimum_grade": "C",
+                "notes": "Recommended but not essential"
+              }
+            ],
+            "english_proficiency": {
+              "required": true,
+              "accepted_tests": [
+                {
+                  "test_name": "IELTS",
+                  "minimum_score": "7.0 overall"
+                }
+              ],
+              "exemptions": [
+                "English A-Level at grade C or higher"
+              ]
+            }
+          }
+        ],
+        "alternative_pathways": [],
+        "selection_process": {
+          "is_selective": true,
+          "additional_assessments": [
+            "NBT (National Benchmark Tests) mandatory",
+            "Selection based on APS and NBT results combined"
+          ],
+          "closing_date": "30 September"
+        }
+      },
+      "career_outcomes": {
+        "job_roles": [
+          {
+            "role_title": "Chartered Accountant (CA(SA))",
+            "role_category": "FIN-001",
+            "seniority_level": "Varies",
+            "skills_required": [
+              "Financial accounting",
+              "Auditing",
+              "Taxation",
+              "Financial management",
+              "Business acumen",
+              "Ethical decision-making"
+            ]
+          },
+          {
+            "role_title": "Management Accountant",
+            "role_category": "FIN-001",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Cost accounting",
+              "Budgeting",
+              "Financial analysis",
+              "Management reporting",
+              "Strategic planning"
+            ]
+          },
+          {
+            "role_title": "Financial Analyst",
+            "role_category": "FIN-002",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Financial modeling",
+              "Investment analysis",
+              "Data analysis",
+              "Excel proficiency",
+              "Presentation skills"
+            ]
+          },
+          {
+            "role_title": "Tax Consultant",
+            "role_category": "FIN-001",
+            "seniority_level": "Junior",
+            "skills_required": [
+              "Tax law",
+              "Tax compliance",
+              "Tax planning",
+              "Client advisory",
+              "SARS procedures"
+            ]
+          },
+          {
+            "role_title": "Auditor",
+            "role_category": "FIN-001",
+            "seniority_level": "Entry Level",
+            "skills_required": [
+              "Audit procedures",
+              "Risk assessment",
+              "Internal controls",
+              "Regulatory compliance",
+              "Analytical thinking"
+            ]
+          }
+        ],
+        "industries": [
+          "Accounting and Auditing Firms",
+          "Banking and Financial Services",
+          "Corporate Finance Departments",
+          "Government",
+          "Consulting",
+          "Insurance",
+          "Manufacturing",
+          "Retail and FMCG"
+        ],
+        "professional_registration": [
+          {
+            "body_name": "South African Institute of Chartered Accountants (SAICA)",
+            "registration_type": "Chartered Accountant CA(SA)",
+            "accreditation_status": "Fully Accredited"
+          },
+          {
+            "body_name": "Independent Regulatory Board for Auditors (IRBA)",
+            "registration_type": "Registered Auditor",
+            "accreditation_status": "Fully Accredited"
+          }
+        ],
+        "further_study_options": [
+          "Postgraduate Diploma in Accounting (required for SAICA pathway)",
+          "BCom Honours in Accounting",
+          "Master of Commerce in Accounting",
+          "Master of Philosophy in Accounting",
+          "PhD in Accounting"
+        ],
+        "employment_statistics": {
+          "employability_rate": 95,
+          "average_starting_salary": {
+            "amount": 320000,
+            "currency": "ZAR",
+            "year": 2024
+          },
+          "source": "UCT Commerce Faculty Graduate Survey 2024"
+        }
+      },
+      "course_content": {
+        "major_streams": [
+          "Accounting (SAICA-accredited pathway)",
+          "Accounting with Finance",
+          "Accounting with Information Systems"
+        ],
+        "core_modules": [
+          "Financial Accounting",
+          "Management Accounting",
+          "Taxation",
+          "Auditing",
+          "Business Law",
+          "Corporate Finance",
+          "Financial Management",
+          "Economics",
+          "Business Statistics",
+          "Information Systems"
+        ],
+        "practical_components": [
+          "Case study analyses",
+          "Practical accounting software training (e.g., Pastel, Sage)",
+          "Industry guest lectures",
+          "Vacation work encouraged at accounting firms",
+          "TOPP (Training Outside Public Practice) programme"
+        ]
+      },
+      "additional_info": {
+        "fees": {
+          "annual_fee_range": "R68,000 - R78,000",
+          "year": 2025
+        },
+        "bursaries_available": true,
+        "accommodation": true
+      }
+    }
+  ]
+}
