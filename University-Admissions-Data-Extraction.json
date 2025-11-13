@@ -1,0 +1,450 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "University Admissions Database Schema",
+  "description": "Standardized schema for South African university admission requirements and career outcomes",
+  "type": "object",
+  "required": ["university", "extraction_metadata", "courses"],
+  "properties": {
+    "university": {
+      "type": "object",
+      "required": ["name", "country", "province"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Official university name"
+        },
+        "abbreviation": {
+          "type": "string",
+          "description": "Common abbreviation (e.g., UCT, Wits, UP)"
+        },
+        "country": {
+          "type": "string",
+          "enum": ["South Africa"],
+          "description": "Country where university is located"
+        },
+        "province": {
+          "type": "string",
+          "enum": ["Western Cape", "Gauteng", "KwaZulu-Natal", "Eastern Cape", "Free State", "Limpopo", "Mpumalanga", "Northern Cape", "North West"],
+          "description": "Province location"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["Traditional University", "University of Technology", "Comprehensive University"],
+          "description": "Type of institution"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Official website URL"
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "admissions_email": {"type": "string", "format": "email"},
+            "admissions_phone": {"type": "string"},
+            "physical_address": {"type": "string"}
+          }
+        }
+      }
+    },
+    "extraction_metadata": {
+      "type": "object",
+      "required": ["prospectus_year", "extraction_date"],
+      "properties": {
+        "prospectus_year": {
+          "type": "integer",
+          "minimum": 2020,
+          "description": "Academic year the prospectus covers"
+        },
+        "prospectus_source": {
+          "type": "string",
+          "description": "Source document name or URL"
+        },
+        "extraction_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date data was extracted (YYYY-MM-DD)"
+        },
+        "extracted_by": {
+          "type": "string",
+          "description": "Person or system that extracted the data"
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": ["unverified", "verified", "needs_review"],
+          "default": "unverified"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Any extraction notes or caveats"
+        }
+      }
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["course_code", "course_name", "faculty", "qualification_type", "admission_requirements"],
+        "properties": {
+          "course_code": {
+            "type": "string",
+            "description": "Official course code from university (e.g., BSCOM01)",
+            "pattern": "^[A-Z0-9-]+$"
+          },
+          "course_name": {
+            "type": "string",
+            "description": "Full official course name"
+          },
+          "faculty": {
+            "type": "string",
+            "description": "Faculty name (standardized)"
+          },
+          "department": {
+            "type": "string",
+            "description": "Department or school within faculty"
+          },
+          "qualification_type": {
+            "type": "string",
+            "enum": [
+              "Bachelor's Degree",
+              "Bachelor of Technology",
+              "Advanced Diploma",
+              "National Diploma",
+              "Higher Certificate",
+              "Postgraduate Diploma",
+              "Honours Degree",
+              "Master's Degree",
+              "Doctoral Degree"
+            ],
+            "description": "Type of qualification awarded"
+          },
+          "qualification_name": {
+            "type": "string",
+            "description": "Specific qualification (e.g., BSc, BA, BCom, BEng)"
+          },
+          "nqf_level": {
+            "type": "integer",
+            "minimum": 5,
+            "maximum": 10,
+            "description": "National Qualifications Framework level"
+          },
+          "duration": {
+            "type": "object",
+            "properties": {
+              "years": {"type": "number", "description": "Duration in years"},
+              "mode": {
+                "type": "string",
+                "enum": ["Full-time", "Part-time", "Distance Learning", "Flexible"],
+                "description": "Study mode"
+              }
+            }
+          },
+          "saqa_id": {
+            "type": "string",
+            "description": "SAQA qualification ID if available"
+          },
+          "admission_requirements": {
+            "type": "object",
+            "required": ["nsc_requirements"],
+            "properties": {
+              "nsc_requirements": {
+                "type": "object",
+                "description": "National Senior Certificate (Matric) requirements",
+                "required": ["minimum_aps"],
+                "properties": {
+                  "minimum_aps": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 50,
+                    "description": "Minimum Admission Point Score"
+                  },
+                  "bachelor_degree_endorsement": {
+                    "type": "boolean",
+                    "description": "Requires Bachelor's degree endorsement"
+                  },
+                  "diploma_endorsement": {
+                    "type": "boolean",
+                    "description": "Accepts Diploma endorsement"
+                  },
+                  "required_subjects": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["subject", "minimum_level"],
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "description": "Subject name (use standardized names)"
+                        },
+                        "minimum_level": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 7,
+                          "description": "Minimum achievement level (1-7 scale)"
+                        },
+                        "minimum_percentage": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100,
+                          "description": "Minimum percentage if specified"
+                        },
+                        "alternatives": {
+                          "type": "array",
+                          "items": {"type": "string"},
+                          "description": "Alternative subjects accepted"
+                        }
+                      }
+                    }
+                  },
+                  "language_requirements": {
+                    "type": "object",
+                    "properties": {
+                      "home_language": {
+                        "type": "object",
+                        "properties": {
+                          "minimum_level": {"type": "integer", "minimum": 1, "maximum": 7}
+                        }
+                      },
+                      "first_additional_language": {
+                        "type": "object",
+                        "properties": {
+                          "minimum_level": {"type": "integer", "minimum": 1, "maximum": 7}
+                        }
+                      }
+                    }
+                  },
+                  "additional_requirements": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Any additional NSC-specific requirements"
+                  }
+                }
+              },
+              "international_qualifications": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["qualification_type", "country_region"],
+                  "properties": {
+                    "qualification_type": {
+                      "type": "string",
+                      "description": "Type of qualification (e.g., A-Levels, IB, IGCSE)"
+                    },
+                    "country_region": {
+                      "type": "string",
+                      "description": "Country or region of origin"
+                    },
+                    "minimum_requirements": {
+                      "type": "object",
+                      "description": "Specific requirements for this qualification"
+                    },
+                    "subject_requirements": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "subject": {"type": "string"},
+                          "minimum_grade": {"type": "string"},
+                          "notes": {"type": "string"}
+                        }
+                      }
+                    },
+                    "english_proficiency": {
+                      "type": "object",
+                      "properties": {
+                        "required": {"type": "boolean"},
+                        "accepted_tests": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "test_name": {
+                                "type": "string",
+                                "enum": ["IELTS", "TOEFL iBT", "TOEFL PBT", "Cambridge CAE", "Cambridge CPE", "PTE Academic", "Duolingo"]
+                              },
+                              "minimum_score": {"type": "string"}
+                            }
+                          }
+                        },
+                        "exemptions": {
+                          "type": "array",
+                          "items": {"type": "string"},
+                          "description": "Conditions under which English test is waived"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "alternative_pathways": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "pathway_type": {
+                      "type": "string",
+                      "description": "Type of alternative pathway (e.g., RPL, Mature Age Entry)"
+                    },
+                    "requirements": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "eligibility": {
+                      "type": "string",
+                      "description": "Who is eligible for this pathway"
+                    }
+                  }
+                }
+              },
+              "selection_process": {
+                "type": "object",
+                "properties": {
+                  "is_selective": {
+                    "type": "boolean",
+                    "description": "Whether admission is competitive/selective"
+                  },
+                  "additional_assessments": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Portfolio, interview, aptitude tests, etc."
+                  },
+                  "closing_date": {
+                    "type": "string",
+                    "description": "Application closing date"
+                  }
+                }
+              }
+            }
+          },
+          "career_outcomes": {
+            "type": "object",
+            "properties": {
+              "job_roles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["role_title", "role_category"],
+                  "properties": {
+                    "role_title": {
+                      "type": "string",
+                      "description": "Standardized job title"
+                    },
+                    "role_category": {
+                      "type": "string",
+                      "description": "Career category (use taxonomy)"
+                    },
+                    "seniority_level": {
+                      "type": "string",
+                      "enum": ["Entry Level", "Junior", "Mid-Level", "Senior", "Executive", "Varies"],
+                      "description": "Typical seniority level for role"
+                    },
+                    "skills_required": {
+                      "type": "array",
+                      "items": {"type": "string"},
+                      "description": "Key skills for this role"
+                    }
+                  }
+                }
+              },
+              "industries": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Industries graduates typically work in"
+              },
+              "professional_registration": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "body_name": {
+                      "type": "string",
+                      "description": "Name of professional body (e.g., ECSA, SACAP, SAICA)"
+                    },
+                    "registration_type": {
+                      "type": "string",
+                      "description": "Type of registration possible"
+                    },
+                    "accreditation_status": {
+                      "type": "string",
+                      "enum": ["Fully Accredited", "Provisionally Accredited", "Not Accredited", "Pending", "Unknown"],
+                      "description": "Accreditation status of the course"
+                    }
+                  }
+                }
+              },
+              "further_study_options": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Postgraduate studies this qualification leads to"
+              },
+              "employment_statistics": {
+                "type": "object",
+                "properties": {
+                  "employability_rate": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "description": "Percentage employed within specified timeframe"
+                  },
+                  "average_starting_salary": {
+                    "type": "object",
+                    "properties": {
+                      "amount": {"type": "number"},
+                      "currency": {"type": "string", "default": "ZAR"},
+                      "year": {"type": "integer"}
+                    }
+                  },
+                  "source": {
+                    "type": "string",
+                    "description": "Source of employment statistics"
+                  }
+                }
+              }
+            }
+          },
+          "course_content": {
+            "type": "object",
+            "properties": {
+              "major_streams": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Available majors or specializations"
+              },
+              "core_modules": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Key modules/subjects in the course"
+              },
+              "practical_components": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Practicals, work-integrated learning, etc."
+              }
+            }
+          },
+          "additional_info": {
+            "type": "object",
+            "properties": {
+              "fees": {
+                "type": "object",
+                "properties": {
+                  "annual_fee_range": {"type": "string"},
+                  "year": {"type": "integer"}
+                }
+              },
+              "bursaries_available": {
+                "type": "boolean",
+                "description": "Whether bursaries are mentioned"
+              },
+              "accommodation": {
+                "type": "boolean",
+                "description": "Whether university accommodation is available"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
